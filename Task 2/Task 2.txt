@@ -1,0 +1,31 @@
+┌──(root💀kali)-[~]
+└─# nikto -h http://zero.webappsecurity.com/  
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          54.82.22.214
++ Target Hostname:    zero.webappsecurity.com
++ Target Port:        80
++ Start Time:         2021-09-12 12:24:44 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache-Coyote/1.1
++ Retrieved access-control-allow-origin header: *
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Server banner has changed from 'Apache-Coyote/1.1' to 'Apache/2.2.6 (Win32) mod_ssl/2.2.6 OpenSSL/0.9.8e mod_jk/1.2.40' which may suggest a WAF, load balancer or proxy is in place
++ Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH 
++ OSVDB-397: HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ OSVDB-5646: HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ HTTP method: 'PATCH' may allow client to issue patch commands to server. See RFC-5789.
++ OSVDB-561: /server-status: This reveals Apache information. Comment out appropriate line in the Apache conf file or restrict access to allowed sources.
++ OSVDB-3092: /admin/: This might be interesting...
++ Uncommon header 'content-disposition' found, with contents: attachment; filename="readme.txt"
++ OSVDB-3092: /readme.txt: This might be interesting...
++ /admin/index.html: Admin login page/section found.
++ /login.html: Admin login page/section found.
++ /manager/html: Default Tomcat Manager / Host Manager interface found
++ /manager/status: Default Tomcat Server Status interface found
++ 10445 requests: 0 error(s) and 16 item(s) reported on remote host
++ End Time:           2021-09-12 13:00:39 (GMT-4) (2155 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

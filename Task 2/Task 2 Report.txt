@@ -1,0 +1,43 @@
+**
+Title: Vulnerability testing
+Domain: webappsecurity.com
+Subdomain: zero.webappsecurity.com
+
+**
+**
+Steps to reproduce:
+
+Step 1: In the command prompt type the command 'nikto -h http://zero.webappsecurity.com/'
+
+Step 2: Nikto starts scanning automatically.
+
+Step 3: Choose any one of the reported Vulnerabilities. 
+
+Step 4: Write Reports for the vulnerability you wanted to write. 
+
+**
+**
+
+Impacts:
+1. It helps us to detect security weaknesses before malicious hackers do.
+2. A list of all the vulnerabilities of the sub domain are showed in an orderly manner.
+3. This can help us to prepare for future upgrades on the sub-domain.
+4. It serves as an established security record for later assessments.
+
+**
+**
+
+Mitigation: 
+1. If the vulnerabilities are noticed beforehand, we can lessen the likelihood and/or impact of a vulnerability being exploited. 
+2. This is sometimes necessary when a proper fix or patch isn't yet available for an identified vulnerability.
+3. This option should ideally be used to buy time for an organization to eventually remediate a vulnerability. 
+4. Here, the anti-clickjacking X-Frame-Options header is not present, which could make the website vulnerable to clickjacking attack.
+5. The X-XSS-Protection header is also not defined. This header can hint to the user agent to protect against some forms of XSS.
+6. There are also some vulnerabilities that can allow the user to patch some files, delete some files or save some files directly to the server.
+
+**
+**
+
+Including:
+1. Screenshot
+2. Text File
