@@ -1,0 +1,50 @@
+**
+Title: Cross Site Scripting (XSS)
+Domain: vulweb.com
+Subdomain: testasp.vulnweb.com
+
+**
+**
+Steps to reproduce:
+
+Step 1: Visit http://testasp.vulnweb.com/
+
+Step 2: On the top menu you will find a search option.
+
+Step 3: Click on it and you will be prompted with the Search box.
+
+Step 4: You can intercept the request in Burp Suite
+
+Step 5: Now you can find different payloads for XSS. 
+
+Step 6: Send the request to the intruder and paste all the payloads.
+
+Step 7: Try to find a successful payload for XSS.
+
+Step 8: Prepare a report for it.
+
+**
+**
+
+Impacts:
+1. It helps us to detect XSS weaknesses before malicious hackers do. XSS continues to remain a major threat to such web applications. This could help hackers to steal user's personal information and exploit it.
+2. A list of all the XSS payloads which can attack the website are showed in an orderly manner.
+3. This can help us to prepare for future upgrades on the sub-domain.
+4. It serves as an established security record for later assessments.
+
+**
+**
+
+Mitigation: 
+1. If the vulnerabilities are noticed beforehand, we can lessen the likelihood and/or impact of a vulnerability being exploited. 
+2. This is sometimes necessary when a proper fix or patch isn't yet available for an identified vulnerability.
+3. This option should ideally be used to buy time for an organization to eventually remediate a vulnerability. 
+4. Here, Sanitize user input: Validate to catch potentially malicious user-provided input. 
+5. Also we can encode output to prevent potentially malicious user-provided data from triggering automatic load-and-execute behavior by a browser
+
+**
+**
+
+Including:
+1. Screenshots
+2. POC
